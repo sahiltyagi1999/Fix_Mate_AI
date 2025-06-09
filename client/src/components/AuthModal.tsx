@@ -12,7 +12,7 @@ interface AuthModalProps {
   onAuthenticated: (token: string) => void;
 }
 
-const BASE_URL = 'http://localhost:5000/api/auth';
+const BASE_URL = `${process.env.URL}/api/auth`;
 
 const AuthModal = ({ isOpen, onClose, defaultTab = 'login', onAuthenticated }: AuthModalProps) => {
   const [tab, setTab] = useState<'login' | 'signup'>(defaultTab);
@@ -56,7 +56,7 @@ const AuthModal = ({ isOpen, onClose, defaultTab = 'login', onAuthenticated }: A
         onAuthenticated(token);
         onClose();
       } else {
-        alert(data.msg); // Show "User registered successfully"
+        alert(data.msg); 
         setTab('login');
       }
     } catch (err: any) {

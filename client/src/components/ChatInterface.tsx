@@ -68,9 +68,9 @@ const ChatInterface = ({ onLogout }: ChatInterfaceProps) => {
     setMessages((prev) => [...prev, assistantMessage]);
 
     try {
-      const token = localStorage.getItem('token'); // Token must be saved at login
+      const token = localStorage.getItem('token');
 
-      const response = await fetch('http://localhost:5000/api/chat/', {
+      const response = await fetch(`${process.env.URL}/api/chat/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
