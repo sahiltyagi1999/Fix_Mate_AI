@@ -17,7 +17,7 @@ const Navigation = ({ onLoginClick, onSignupClick }: NavigationProps) => {
               <span className="text-white font-bold text-sm">VC</span>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Tech Assist            </span>
+              Fix Mate AI            </span>
           </div>
           
           <div className="flex items-center space-x-4">

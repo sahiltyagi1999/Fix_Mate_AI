@@ -21,7 +21,7 @@ const ChatInterface = ({ onLogout }: ChatInterfaceProps) => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      content: 'Hello! Welcome to Tech Assist. How can I help you today?',
+      content: 'Hello! Welcome to Fix Mate AI. How can I help you today?',
       sender: 'assistant',
       timestamp: new Date(),
     },
@@ -113,7 +113,7 @@ const ChatInterface = ({ onLogout }: ChatInterfaceProps) => {
           <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">VC</span>
           </div>
-          <h1 className="text-xl font-semibold">Tech Assist</h1>
+          <h1 className="text-xl font-semibold">Fix Mate AI</h1>
         </div>
         <Button variant="outline" onClick={onLogout}>
           Logout

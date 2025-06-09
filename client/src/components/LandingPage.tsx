@@ -24,7 +24,7 @@ const LandingPage = ({ onLoginClick, onSignupClick }: LandingPageProps) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent leading-tight">
-              Tech Assist            </h1>
+              Fix Mate AI            </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Experience the future of conversation with our beautiful, intuitive chat interface. 
               Connect, collaborate, and communicate like never before.
@@ -118,7 +118,7 @@ const LandingPage = ({ onLoginClick, onSignupClick }: LandingPageProps) => {
               Ready to Transform Your Chat Experience?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Join thousands of users who have already discovered the power of Tech Assist            </p>
+              Join thousands of users who have already discovered the power of Fix Mate AI            </p>
             <Button 
               size="lg" 
               onClick={onSignupClick}

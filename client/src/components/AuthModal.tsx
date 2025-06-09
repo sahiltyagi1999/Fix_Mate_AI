@@ -71,7 +71,7 @@ const AuthModal = ({ isOpen, onClose, defaultTab = 'login', onAuthenticated }: A
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="text-center text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Welcome to Tech Assist
+            Welcome to Fix Mate AI
           </DialogTitle>
         </DialogHeader>
 
