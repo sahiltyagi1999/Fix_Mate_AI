@@ -12,7 +12,7 @@ interface AuthModalProps {
   onAuthenticated: (token: string) => void;
 }
 
-const BASE_URL = `${process.env.URL}/api/auth`;
+const BASE_URL = `${import.meta.env.VITE_URL}/api/auth`;
 
 const AuthModal = ({ isOpen, onClose, defaultTab = 'login', onAuthenticated }: AuthModalProps) => {
   const [tab, setTab] = useState<'login' | 'signup'>(defaultTab);

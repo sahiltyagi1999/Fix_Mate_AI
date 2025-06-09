@@ -70,7 +70,7 @@ const ChatInterface = ({ onLogout }: ChatInterfaceProps) => {
     try {
       const token = localStorage.getItem('token');
 
-      const response = await fetch(`${process.env.URL}/api/chat/`, {
+      const response = await fetch(`${import.meta.env.VITE_URL}/api/chat/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
